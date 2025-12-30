@@ -7,3 +7,5 @@ As of right now, half of Onikakushi has been translated. I'm hoping on having th
 This mod requires the [07th mod](https://07th-mod.com/) to work.
 
 I've only tested the mod on ADV mode so far, so if you found problems with the other modes, please tell me about it!
+
+(This is also my first time creating a github repository, that's why it's a bit scuffed. I have no idea what I'm doing lol)

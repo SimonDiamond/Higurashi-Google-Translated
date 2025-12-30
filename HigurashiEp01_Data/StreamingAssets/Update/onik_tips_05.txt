@@ -1,0 +1,181 @@
+﻿void main()
+{
+
+
+//■雛見沢ダム計画
+
+//*Sub_Tips_005
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 2, "lsys12", 56, 0 );
+
+
+//　昭和五十年十月＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和五十年十月。",
+		   NULL, "I'm Oktober 1975", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　総理府告示第ＸＸＸ号を以て、雛見沢発電所電源開発基本計画が発表された＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　総理府告示第ＸＸＸ号を以て、雛見沢発電所電源開発基本計画が発表された。",
+		   NULL, "According to a statement by Prime Minister XXX, a comprehensive development plan for the Hinamizu power plant has been announced.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+
+//　計画された「雛見沢ダム」の規模は甚大で、雛見沢村の受ける影響は余りに重大だった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　計画された「雛見沢ダム」の規模は甚大で、雛見沢村の受ける影響は余りに重大だった。",
+		   NULL, "The expansion of the Hanamizu Dam project will have a significant impact on the city of Hanamizu.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("background/kawa4", 1000 );
+
+//　雛見沢ダムにより水没する地域は雛見沢、高津戸、清津、松本、谷河内の五ヶ部落に及び＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢ダムにより水没する地域は雛見沢、高津戸、清津、松本、谷河内の五ヶ部落に及び、",
+		   NULL, "Five cities are located around Lake Futami: Futami, Futami Town, Takatsu, Kyoto, Matsumoto, and Yakuna.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　水没世帯は二九一戸＠人口一二五一人＠小学校一＠中学校一＠郵便局一＠農協支所一＠営林署貯木場一＠神社五＠寺院二＠魚族増殖場一＠等多数の公共的文化的生産的施設と信仰の対象を永久に湖底に没するものである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　水没世帯は二九一戸、",
+		   NULL, "Two hundred and ninety-one villages in this region will be flooded.", Line_WaitForInput);
+	OutputLine(NULL, "人口一二五一人、",
+		   NULL, " People: 1251,", Line_WaitForInput);
+	OutputLine(NULL, "小学校一、",
+		   NULL, " School problems,", Line_WaitForInput);
+	OutputLine(NULL, "中学校一、",
+		   NULL, " A group of people,", Line_WaitForInput);
+	OutputLine(NULL, "郵便局一、",
+		   NULL, " 1 email,", Line_WaitForInput);
+	OutputLine(NULL, "農協支所一、",
+		   NULL, " 1. Aid to agriculture,", Line_WaitForInput);
+	OutputLine(NULL, "営林署貯木場一、",
+		   NULL, " In nature, its length can reach one meter,", Line_WaitForInput);
+	OutputLine(NULL, "神社五、",
+		   NULL, " 5. Partner schools,", Line_WaitForInput);
+	OutputLine(NULL, "寺院二、",
+		   NULL, " Two gods, ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魚族増殖場一、",
+		   NULL, "He said.", Line_WaitForInput);
+	OutputLine(NULL, "等多数の公共的文化的生産的施設と信仰の対象を永久に湖底に没するものである。",
+		   NULL, " Entire cities, cultural, agricultural and religious sites are buried forever under mountains of plastic waste.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("background/damu2", 1000 );
+
+//　この天恵豊かで住みよい郷土を、血と汗をもって築いてくれた父祖幾百年の艱難辛苦を思えば余りに痛ましいことであり＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この天恵豊かで住みよい郷土を、血と汗をもって築いてくれた父祖幾百年の艱難辛苦を思えば余りに痛ましいことであり、",
+		   NULL, "Unfortunately, our ancestors worked tirelessly for centuries in a place where there was an iron mine, but it was later abandoned.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　水没地域はもとより全部落は郷土死守の決意を固め次々に決起、団結し鬼ヶ淵死守同盟を結成＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　水没地域はもとより全部落は郷土死守の決意を固め次々に決起、団結し鬼ヶ淵死守同盟を結成。",
+		   NULL, "Fearing their homes would be flooded, local residents collectively erected a \"mau bao\" (a type of wooden-framed house).", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　ダム建設の中止、又は支流への計画変更を強力に要請し続けたのである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ダム建設の中止、又は支流への計画変更を強力に要請し続けたのである。",
+		   NULL, "The construction of the bridge was delayed, and changes had to be made to the project.", Line_Normal);
+	ClearMessage();
+
+//　平和的かつ民主的な話し合いを求めるも、政府とその傀儡である電源会社総裁ＸＸＸＸＸはこれを拒否＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　平和的かつ民主的な話し合いを求めるも、政府とその傀儡である電源会社総裁ＸＸＸＸＸはこれを拒否。",
+		   NULL, "Citizens want peaceful dialogue, but the authorities and the popular organization \"XXX\" refuse it.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　筆舌に尽くし難い極悪非道を以て、村民の民主的運動と雛見沢の郷土を踏みにじったのである＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　筆舌に尽くし難い極悪非道を以て、村民の民主的運動と雛見沢の郷土を踏みにじったのである。",
+		   NULL, "They destroyed the democratic system of society with unprecedented cruelty.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だが村民はこれに怯むことなく益々団結、郷土死守の決意をさらに強固にしていくのである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが村民はこれに怯むことなく益々団結、郷土死守の決意をさらに強固にしていくのである。",
+		   NULL, "However, the people did not hesitate to unite and defend their homeland at the risk of their lives.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("background/mo_b1", 1000 );
+
+//　今日、恐るべき雛見沢ダム建設計画は、その再開が無期限に凍結されている＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日、恐るべき雛見沢ダム建設計画は、その再開が無期限に凍結されている。",
+		   NULL, "Construction on the Hinamiawa Dam has been suspended.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　村民はこの凍結が自らの団結の祟高な力によってなされていることを理解しており＠そしてこの恐るべき計画が依然撤回されていないことも理解しているのである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　村民はこの凍結が自らの団結の祟高な力によってなされていることを理解しており、",
+		   NULL, "It was previously reported that these delays were due to a lack of cooperation", Line_WaitForInput);
+	OutputLine(NULL, "そしてこの恐るべき計画が依然撤回されていないことも理解しているのである。",
+		   NULL, " and compromise in the policy development process.", Line_Normal);
+	ClearMessage();
+
+//　すでに鬼ヶ淵死守同盟はその役割を終え解散しているが、そこで育まれた団結の炎は消えていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　すでに鬼ヶ淵死守同盟はその役割を終え解散しているが、そこで育まれた団結の炎は消えていない。",
+		   NULL, "After the operation, the defenders of the imaginary abyss were destroyed, but the idea of the alliance they formed remained unchanged.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　村民の心にこの炎が灯り続ける限り、再び郷土が湖底に沈む災厄に見舞われることは断じてあり得ないのである＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　村民の心にこの炎が灯り続ける限り、再び郷土が湖底に沈む災厄に見舞われることは断じてあり得ないのである。",
+		   NULL, "This desire was deeply rooted in the hearts of the people, and they refused to accept anyone who wanted to enter their homes at the well.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping); }
+
+
+//　　　　　鬼ヶ淵死守同盟会長!w1000　公由喜一郎￥
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　　　　　鬼ヶ淵死守同盟会長",
+		   NULL, "President of the Anigafuchi School Parent-Teacher Association,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　公由喜一郎書",
+		   NULL, " Kishi Kiichiro", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+//gosub *tip_e
+//return
+
+
+
+
+}
+

@@ -1,0 +1,1 @@
+# Higurashi-Google-Translated

@@ -1,0 +1,20 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+//「レナー＠　トイレじゃない＠　最近、お通じが来ないって言ってたなぁ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300023", 256, TRUE);
+	OutputLine(NULL, "「レナー？",
+		   NULL, "\"Are you crazy?", Line_Continue);
+	Wait (400)
+	OutputLine(NULL, "　トイレじゃない？",
+		   NULL, " Can't you take a shower?", Line_WaitForInput);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300024", 256, TRUE);
+	OutputLine(NULL, "　除きたいなら止めないけど、通報するからねぇ〜」",
+		   NULL, " If you don't want to be a spy, I won't arrest you, I'll hand you over to the police!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+

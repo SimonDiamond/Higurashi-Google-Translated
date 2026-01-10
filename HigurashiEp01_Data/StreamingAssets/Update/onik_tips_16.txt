@@ -1,0 +1,246 @@
+﻿void main()
+{
+
+//■自殺を誘発するクスリは？
+
+//*Sub_Tips_016
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "msys12", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/ke_ky1", 400 );
+
+
+//「単刀直入に...自殺させる薬ってないんですか？＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700018", 256, TRUE);
+	OutputLine(NULL, "「単刀直入に…自殺させる薬ってないんですか？」",
+		   NULL, "\"So... what drugs can kill a person?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「直接的にはない。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200020", 256, TRUE);
+	OutputLine(NULL, "「直接的にはない。」",
+		   NULL, "\"No, that's not true.\"", Line_Normal);
+	ClearMessage();
+
+//「遠回しですねぇ＠...では間接的にはあるってことですか？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700019", 256, TRUE);
+	OutputLine(NULL, "「遠回しですねぇ。",
+		   NULL, "\"The answer to this question is very difficult.", Line_Continue);
+	Wait ( 1800 );
+	OutputLine(NULL, "…では間接的にはあるってことですか？」",
+		   NULL, " Do you think anyone is doing this secretly?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「自殺したくなる精神状態を誘発することはできる、!w1000っちゅうことだ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200021", 256, TRUE);
+	OutputLine(NULL, "「自殺したくなる精神状態を誘発することはできる、",
+		   NULL, "\"This means it could lead", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1400 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "っちゅうことだ。」",
+		   NULL, " to suicidal thoughts.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「...難しい言い方になりましたねぇ＠何ですかその、自殺したくなる精神状態ってのは。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700020", 256, TRUE);
+	OutputLine(NULL, "「…難しい言い方になりましたねぇ。",
+		   NULL, "\"It's hard to say.", Line_Continue);
+	Wait ( 1500 );
+	OutputLine(NULL, "何ですかその、自殺したくなる精神状態ってのは。」",
+		   NULL, " What does \"intentional murder\" mean?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zonik_tips_16_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zonik_tips_16_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　躁鬱（そううつ）病というのは鬱（うつ）病とは異なる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　躁鬱（そううつ）病というのは鬱（うつ）病とは異なる。",
+		   NULL, "Depression and mental illness are two different things.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　鬱病は鬱状態という非常にネガティブな精神状態のみを引き起こすが＠躁鬱病は、このネガティブな鬱状態と交互に、非常にアクティブな躁状態を引き起こす￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬱病は鬱状態という非常にネガティブな精神状態のみを引き起こすが、",
+		   NULL, "Depression is considered a chronic illness,", Line_WaitForInput);
+	OutputLine(NULL, "躁鬱病は、このネガティブな鬱状態と交互に、非常にアクティブな躁状態を引き起こす。",
+		   NULL, " while schizophrenia is a bipolar disorder characterized by periods of severe depression", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("background/ke_ky1", 400 );
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zonik_tips_16_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zonik_tips_16_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
+
+//「つまり、薬によらなくても異常な精神状態に陥る可能性があると。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700028", 256, TRUE);
+	OutputLine(NULL, "「つまり、薬によらなくても異常な精神状態に陥る可能性があると。」",
+		   NULL, "\"In fact, even without using drugs, a person can suddenly achieve a high level of mental stimulation.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「仏は犯人に囲まれて命に危険が迫っとったんじゃろ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200038", 256, TRUE);
+	OutputLine(NULL, "「仏は犯人に囲まれて命に危険が迫っとったんじゃろ？",
+		   NULL, "\"After this incident, those who died were arrested and their lives were put in danger, right?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　極度の緊張が続いて、それに分泌異常が重なって、さらに打ち所が悪くて脳に障害が起こり自虐行動に走った...可能性もあるかもしれんの。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200039", 256, TRUE);
+	OutputLine(NULL, "　極度の緊張が続いて、それに分泌異常が重なって、さらに打ち所が悪くて脳に障害が起こり自虐行動に走った…可能性もあるかもしれんの。」",
+		   NULL, "All this stress could affect his brain, it could affect his head, all these things together could harm him. It's possible.\"", Line_Normal);
+	ClearMessage();
+
+
+//「...............もうちょっと省略して言ってくれませんかねぇ...。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700029", 256, TRUE);
+	OutputLine(NULL, "「……………もうちょっと省略して言ってくれませんかねぇ…。」",
+		   NULL, "\"Can you explain this to me?\"", Line_Normal);
+	ClearMessage();
+
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zonik_tips_16_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zonik_tips_16_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
+
+//「なっはっはっはっはっはっは！！＠　じゃあホシには殺意はなかったってことですかねぇ＠ちょいと小銭を巻き上げようと殴ったら、たまたま殴り所が悪かったと！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700030", 256, TRUE);
+	OutputLine(NULL, "「なっはっはっはっはっはっは！！！",
+		   NULL, "\"HAHAHAHAHAHAHAHA!!!", Line_Continue);
+	Wait ( 2000 );
+	OutputLine(NULL, "　じゃあホシには殺意はなかったってことですかねぇ。",
+		   NULL, " I think this means that the author didn't want to kill anyone.", Line_WaitForInput);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700031", 256, TRUE);
+	OutputLine(NULL, "ちょいと小銭を巻き上げようと殴ったら、たまたま殴り所が悪かったと！」",
+		   NULL, " They wanted to steal money, but they went to the wrong place.\"", Line_Normal);
+	ClearMessage();
+
+//　でっぷりした中年が二人してげらげらと下品に笑い合う￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でっぷりした中年が二人してげらげらと下品に笑い合う。",
+		   NULL, "Both girls burst out laughing.", Line_Normal);
+	ClearMessage();
+
+//「.........なんてわけはありませんねぇ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700032", 256, TRUE);
+	OutputLine(NULL, "「………なんてわけはありませんねぇ。」",
+		   NULL, "\"But that's not true.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「こほん＠...いかにも。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200041", 256, TRUE);
+	OutputLine(NULL, "「こほん。",
+		   NULL, "\"Coffee.", Line_Continue);
+	Wait ( 1000 );
+	OutputLine(NULL, "…いかにも。」",
+		   NULL, " You're right...\"", Line_Normal);
+	ClearMessage();
+
+//「薬物の常用にせよ、精神的なものにせよ、仏の身元がカギを握っとるぞい＠そっちはどうなっとるんじゃ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200042", 256, TRUE);
+	OutputLine(NULL, "「薬物の常用にせよ、精神的なものにせよ、仏の身元がカギを握っとるぞい。",
+		   NULL, "\"The deceased's medical history, such as alcohol abuse or mental illness, is very important.", Line_Continue);
+	Wait ( 4600 );
+	OutputLine(NULL, "そっちはどうなっとるんじゃ？」",
+		   NULL, " What is your score?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「ありゃぁこんな時間＠　そろそろ戻らないと熊ちゃん、怒っちゃいますねぇ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700033", 256, TRUE);
+	OutputLine(NULL, "「ありゃぁこんな時間！",
+		   NULL, "\"Oh my! What era is this?", Line_Continue);
+	OutputLine(NULL, "　そろそろ戻らないと熊ちゃん、怒っちゃいますねぇ。」",
+		   NULL, " I have to go home quickly, or Koeman will be angry with me.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「おう＠　頑張れよ＠　いいお年をの！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigators at work in the field</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200043", 256, TRUE);
+	OutputLine(NULL, "「おう！",
+		   NULL, "\"This is great! (or) This is great!", Line_Continue);
+	OutputLine(NULL, "　頑張れよ！",
+		   NULL, " We won!", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200044", 256, TRUE);
+	OutputLine(NULL, "　いいお年をの！」",
+		   NULL, " Be careful.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「いいお年を！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700034", 256, TRUE);
+	OutputLine(NULL, "「いいお年を！」",
+		   NULL, "\"Hi! (or) Hi!\"", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+
+}
+

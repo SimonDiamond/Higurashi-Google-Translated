@@ -1,0 +1,69 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>K.G. Amma</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「なぁに、圭一。",
+		   NULL, "\"Hello, what's the problem?", Line_WaitForInput);
+	OutputLine(NULL, "こんなにたくさん！",
+		   NULL, " Enough! (or) Enough!", Line_WaitForInput);
+	OutputLine(NULL, "　全部違う種類にすることはないでしょ？！」",
+		   NULL, " There's no reason why we shouldn't explore different music styles, right?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　色とりどりのカップめんをどっさりとカートに載せたんだ。",
+		   NULL, "I put colorful noodles in a pot.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>KG's father</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「圭一。",
+		   NULL, "\"Yes, yes.", Line_WaitForInput);
+	OutputLine(NULL, "箱売りしてるのにしなさい。安いから。」",
+		   NULL, " The more you sell, the more you earn.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　親父が渋る。",
+		   NULL, "My father thought this was impossible.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>K.G. Amma</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「決められないならお母さんが決めちゃうわよ。」",
+		   NULL, "\"If you don't make your own decisions, your mother won't accept you.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう急かされても困る…！",
+		   NULL, "It's very quiet there...!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　手早く目当てのラーメンの箱を探しに行く。",
+		   NULL, "I found the pasta I wanted right away.", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>K.G. Amma</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「豚骨ショウガ味、デカカップ？",
+		   NULL, "\"This is a large dish of pork bones cooked with mustard.", Line_WaitForInput);
+	OutputLine(NULL, "　ねぇ圭一、もう少し普通のにしない？」",
+		   NULL, " Cady, could you go back to your ex-boyfriend?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+
+}
+

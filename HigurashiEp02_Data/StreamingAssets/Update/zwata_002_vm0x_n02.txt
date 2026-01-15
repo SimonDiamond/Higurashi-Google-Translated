@@ -1,0 +1,92 @@
+﻿void main()
+{
+}
+
+
+void dialog000()
+{
+}
+
+
+void dialog001()
+{
+}
+
+
+void dialog002()
+{
+}
+
+
+void dialog003()
+{
+}
+
+
+void dialog004()
+{
+}
+
+
+void dialog005()
+{
+}
+
+
+void dialog006()
+{
+}
+
+
+void dialog007()
+{
+        if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11550", 256, TRUE);
+        OutputLine(NULL, "「をぼえてろ魅音んんん〜ッ！！！",
+                   NULL, "\"You are very sad todaaayyy!!!", Line_WaitForInput);
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11560", 256, TRUE);
+        OutputLine(NULL, " 今日の屈辱はきっと１０倍にして返すッ！！",
+                   NULL, " You will pay 10 times that amount!!", Line_WaitForInput);
+
+
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11570", 256, TRUE);
+        OutputLine(NULL, " ぜってーに俺が圧勝して、これ以上にすごい服着せてお持ち帰りしてやるー！」",
+                   NULL, " We will choose the best gifts for you, help you choose the best clothes, and deliver them directly to your home!\"", GetGlobalFlag(GLinemodeSp));
+
+
+        if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+
+void dialog008()
+{
+        if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+
+
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11830", 256, TRUE);
+        OutputLine(NULL, "「魅音って結構、胸があるから今にも見えちゃいそうだよなー。",
+                   NULL, "\"Inday, your breasts are so big that I can see them right away.", Line_WaitForInput);
+
+
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11840", 256, TRUE);
+        OutputLine(NULL, "お客さんみんな見てるぞきっと〜！」",
+                   NULL, " One thing is clear, all your customers will follow you~!\"", GetGlobalFlag(GLinemodeSp));
+        if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+
+void dialog009()
+{
+        if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+
+
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12100", 256, TRUE);
+        OutputLine(NULL, "「詩音はこういう仕事、初めてなのか？",
+                   NULL, "\"Zion, is this your first time doing something like this?", Line_WaitForInput);
+
+
+        ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12110", 256, TRUE);
+        OutputLine(NULL, " 慣れてなさそうだったからさ。」",
+                   NULL, " It's obvious she doesn't understand.\"", GetGlobalFlag(GLinemodeSp));
+        if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

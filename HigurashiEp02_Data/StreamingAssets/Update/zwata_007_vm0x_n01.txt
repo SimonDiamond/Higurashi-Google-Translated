@@ -1,0 +1,81 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34750", 256, TRUE);
+	OutputLine(NULL, "「プロポーション最上級。",
+		   NULL, "\"I want to find a woman who will be honest,", Line_Continue);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34760", 256, TRUE);
+	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
+		   NULL, " truly devoted, and patient enough to make all my dreams come true.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+}
+
+void dialog003()
+{
+}
+
+void dialog004()
+{
+}
+
+void dialog005()
+{
+}
+
+void dialog006()
+{
+}
+
+void dialog007()
+{
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Red tax</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800072", 256, TRUE);
+	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
+		   NULL, "\"They often talk about small towns whose residents hate foreigners.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800073", 256, TRUE);
+	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
+		   NULL, " This is a good example of something that was previously ignored.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+}
+
+void dialog010()
+{
+}
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Red tax</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800106", 256, TRUE);
+	OutputLine(NULL, "「その翌年には…何だっけ、ダム推進派の男の弟夫婦の奥さんだっけ？",
+		   NULL, "\"Until next year... Who is the sister who built the dam?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800107", 256, TRUE);
+	OutputLine(NULL, "　が殺されたんだよな。」",
+		   NULL, " They killed her.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "じゃあ、……その時にも誰かが、……「消えた」？",
+		   NULL, " So... did anyone overlook this part?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+

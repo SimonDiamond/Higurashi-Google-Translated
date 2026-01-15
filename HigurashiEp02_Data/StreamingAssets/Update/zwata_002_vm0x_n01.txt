@@ -1,0 +1,206 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 256, TRUE);
+	OutputLine(NULL, "「はーい！！　みんな傾聴傾聴〜！",
+		   NULL, "\"Very good! Let's all be careful~!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 256, TRUE);
+	OutputLine(NULL, "　ルールを説明するよ〜！！」",
+		   NULL, " Come on, let me explain the law to you~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 256, TRUE);
+	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
+		   NULL, "\"When I was in primary school, the classrooms were exactly like they are today...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 256, TRUE);
+	OutputLine(NULL, "やっぱりアレだよな。",
+		   NULL, " Simply \"This is it.\"", Line_WaitForInput);
+
+	PlaySE( 3, "wa_010", 56, 64 );
+
+//荷物持ち￥
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 256, TRUE);
+	OutputLine(NULL, "荷物持ちだ！",
+		   NULL, " Stop!\"", Line_Normal);
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Money</color>", NULL, Line_ContinueAfterTyping); }
+
+	//VoiceMatching
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 256, TRUE);
+	OutputLine(NULL, "「………「口紅」って書いてありますです。」",
+		   NULL, "\"He said, \"I have black lips.\"\"", Line_Normal);
+	//VoiceMatchingEnd
+
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 256, TRUE);
+	OutputLine(NULL, "「さ、",
+		   NULL, "\"Sa--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 500 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ささッ、",
+		   NULL, " Sa-Sa--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	PlaySE( 3, "wa_006", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 256, TRUE);
+	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名「Ｓａｋｕｒａ」だろおおお！",
+		   NULL, "Sakura is a famous lip balm company, right? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 256, TRUE);
+	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
+		   NULL, "Did you know they have a discount program for the new colors they promote on television?", Line_Continue);
+	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
+		   NULL, " Don't you check these things out, as ladies?", Line_Continue);
+	OutputLine(NULL, "　俺だって知ってるぐらいなんだからぁああぁあぁあッ！！！！」",
+		   NULL, " I think your work is amaziiiiiiiiiing!!!\"", Line_Normal);
+}
+
+void dialog005()
+{
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 256, TRUE);
+	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
+		   NULL, "\"Yes, I understand, but no explanation is needed.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300597", 256, TRUE);
+	OutputLine(NULL, "なんかコーヒー飲んでもカップに付かないってやつでしょ？",
+		   NULL, " Doesn't this drink stick to the edge of the glass even after it's been drunk?", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 256, TRUE);
+	OutputLine(NULL, "　うん。",
+		   NULL, " Okay.", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "知ってる知ってる。」",
+		   NULL, " I know.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>I tried</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200496", 256, TRUE);
+	OutputLine(NULL, "「うんうん。",
+		   NULL, "\"Yes, yes.", Line_Continue);
+	OutputLine(NULL, "とってもかぁいい色してるんだよね！",
+		   NULL, " Isn't this color beautiful?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200497", 256, TRUE);
+	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
+		   NULL, " I found it in the drugstore/pharmacy department.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200498", 256, TRUE);
+	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった〜」",
+		   NULL, " I want to take it home because it's purple.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>My topic</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400252", 256, TRUE);
+	OutputLine(NULL, "「そ、そうですわね。",
+		   NULL, "\"I-I'm going.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400253", 256, TRUE);
+	OutputLine(NULL, "女性としては一通りチェックを入れるのは常識ですわよねぇ！」",
+		   NULL, " It's good that women are now solving this problem.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Money</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500122", 256, TRUE);
+	OutputLine(NULL, "「沙都子はどちらかというと、特売のティッシュの方に興味があったみたいなのです。」",
+		   NULL, "\"My dear, I think you like playing cards.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>My topic</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400254", 256, TRUE);
+	OutputLine(NULL, "「し、失礼ですわね！　ちゃんと新製品のチェックぐらい入れてましてよっ！」",
+		   NULL, "\"I wanted to watch the news!\"", Line_Normal);
+}
+
+void dialog010()
+{
+
+//魅音「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300599", 256, TRUE);
+	OutputLine(NULL, "「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」",
+		   NULL, "\"When you hear the word \"cherry blossoms\", it's strange to wonder what comes to mind first...", Line_Normal);
+
+//圭一rvS19/01/HR_KEI11200.「な、なんでだよおおお！kvS19/01/HR_KEI11210.　女の立場になって考えてみただけだろおおおお！」
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11200", 256, TRUE);
+	OutputLine(NULL, "「な、なんでだよおおお！",
+		   NULL, "\"I-Is everything readyyyy!?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11210", 256, TRUE);
+	OutputLine(NULL, "　女の立場になって考えてみただけだろおおおお！」",
+		   NULL, " From a woman's perspective, I think so!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//圭一rvS19/01/HR_KEI11220.「女に生まれたからには当然美しく装うのがデフォ！kvS19/01/HR_KEI11230.　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！kvS19/01/HR_KEI11240.　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11220", 256, TRUE);
+	OutputLine(NULL, "「女に生まれたからには当然美しく装うのがデフォ！",
+		   NULL, "\"It's good for women to take care of their health!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11230", 256, TRUE);
+	OutputLine(NULL, "　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！",
+		   NULL, " To be honest, I thought the same thiiiiiiing!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11240", 256, TRUE);
+	OutputLine(NULL, "　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」",
+		   NULL, " This is amaziiiiiiiiing!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 256, TRUE);
+	OutputLine(NULL, "　こ〜れである一部分を除けば、本物の女の子なのにな〜〜！！」",
+	NULL, "Witho~ut it, you're not really a woman~~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+

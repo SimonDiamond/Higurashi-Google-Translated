@@ -1,0 +1,86 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「…お出掛け？",
+		   NULL, "\"Where are you going?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100430", 256, TRUE);
+	OutputLine(NULL, "　……うん。",
+		   NULL, " I will do it.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100431", 256, TRUE);
+	OutputLine(NULL, "…学校に。」",
+		   NULL, " ...at school\"", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか。",
+		   NULL, "This morning, Mei Ying came home with a headache, but her health did not improve much.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Cage</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100434", 256, TRUE);
+	OutputLine(NULL, "「さ、３時ぃ？！",
+		   NULL, "\"Ice?! (or) Ice?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100435", 256, TRUE);
+	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
+		   NULL, " Yes, that's true, but... you can't open it!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100436", 256, TRUE);
+	OutputLine(NULL, "　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう。",
+		   NULL, " You can read the first part of the book first, then continue and eventually finish the whole story, right? ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>I tried</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200129", 256, TRUE);
+	OutputLine(NULL, "「ののののの、のどちん、ゆらゆら〜〜〜！　はぅ〜〜〜〜！！！！」",
+		   NULL, "\"S-S-S-S-S-She felt an intense tingling sensation in his throat~~~! Good morning~~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>I tried</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200130", 256, TRUE);
+	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
+		   NULL, "\"I-I-I-I think Sato Kaori is a good person, but R-Rika is a bad person~!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200131", 256, TRUE);
+	OutputLine(NULL, "　の〜ど〜ち〜んん〜〜！！！」",
+		   NULL, " Abs~o~lut~~ely!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>I tried</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200132", 256, TRUE);
+	OutputLine(NULL, "「は、はぅ〜〜！！",
+		   NULL, "\"O-Okay~~?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200133", 256, TRUE);
+	OutputLine(NULL, "　ちらっと見えた、かぁいいの見えた！！",
+		   NULL, " I saw that movie! It was really fun!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200134", 256, TRUE);
+	OutputLine(NULL, "　沙都子ちゃんのもかぁいい、お持ち帰り〜〜！！！！」",
+		   NULL, " Sosa Sadoko is also very beautiful! I will bring it to you~~!!!!\"", Line_Normal);
+	ClearMessage();
+
+//　...レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている…。",
+		   NULL, "Lina grabbed Satoko's neck with both hands and tried to hug her tightly...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+

@@ -1,0 +1,49 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Australians</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700414", 256, TRUE);
+	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
+		   NULL, "\"Mihara, my daughter! I didn't know what you wanted, so I bought you something.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700415", 256, TRUE);
+	OutputLine(NULL, "ほぅら、より取り見取り野原は黄緑〜てなもんです。",
+		   NULL, " Enjoy a variety of entertainment, from westerns to action films.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700416", 256, TRUE);
+	OutputLine(NULL, "　さぁさ、好きなだけ持って行っちゃってくださいー！",
+		   NULL, " Now they have launched a product called \"H-Mango\", which is specially designed for women.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101198", 256, TRUE);
+	OutputLine(NULL, "「こここ、こんな本なんか持ってこないで下さい〜！！！",
+		   NULL, "\"P-P-P-P-P-P-P-Please do not write negative information here~!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101199", 256, TRUE);
+	OutputLine(NULL, "　持って帰って持って帰って！！",
+		   NULL, " Take it home!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101200", 256, TRUE);
+	OutputLine(NULL, "　痛ててててて…！！」",
+		   NULL, " Oh, oh, oh, oh...!\"", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎家には、色々と黒い噂がまことしやかに囁かれていた。",
+		   NULL, "The Sanosaki family found themselves in a tragic situation.", Line_WaitForInput);
+	OutputLine(NULL, "……その中に、非合法の密売を行っている、などと根も葉もないデマもあった。",
+		   NULL, " ...There is some unverified information about the number of products available at this store.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……だとしたら梨花ちゃんも、それに関わっている疑いがある、とでも言いたいのか……？！",
+		   NULL, "Does Oshi know that Rika-chan is also worried about this?", Line_Normal);
+}
+

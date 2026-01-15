@@ -1,0 +1,35 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+}
+
+void dialog002()
+{
+}
+
+void dialog003()
+{
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Do you want to?</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300712", 256, TRUE);
+	OutputLine(NULL, "「…………見たことないでしょ。",
+		   NULL, "\"......You probably didn't see that, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300713", 256, TRUE);
+	OutputLine(NULL, "本物のスタンガンだよ。",
+		   NULL, " This is a very good dog.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300714", 540, TRUE);
+	OutputLine(NULL, "…違法品なんでかなり出力が上げられるようになってるけどね。」",
+		   NULL, " ...It is illegal, and production has increased dramatically.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
